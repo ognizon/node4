@@ -22,8 +22,6 @@ app1.get('/about', (req, res) => {
 app1.use((req, res) => {
     res.status(404).sendFile(path.join(__dirname,'pages', '404.html'));
 });
-// Middleware
-
 
 app1.listen(3001, () => {
     console.log('Server is running on port 3001');
